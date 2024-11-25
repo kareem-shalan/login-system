@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>System.Login</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="one vh-100 d-flex justify-content-center align-items-end " id="PLAYMODE">
+
+        <h1 id="soung">
+
+            <span id="element" class="fw-bolder fs-1 welcome"></span>
+
+        </h1>
+        <audio src="sound/hi.mp3" id="sound" preload="auto"></audio>
+
+    </header>
+
+
+    <section class="m-auto d-flex justify-content-center align-items-center mt-5">
+        <div class="container shadow-lg  rounded-4 mb-5 pt-5 ">
+            <div class="row  align-items-center flex-md-row  flex-column-reverse">
+                <div class="col-md-6  ">
+                    <div class="text-center d-flex flex-column flex-wrap  align-content-center">
+
+                        <article>
+                            <h1>
+                                Welcoome
+                            </h1>
+                            <p class="form-text">
+                                we are glad to see you back with us
+                            </p>
+                        </article>
+                        <div class="input-group flex-nowrap col-md-6  hiddenmy d-none my-2">
+                            <label for="f-name" name="f-name" class="d-flex">
+                                <span class="input-group-text " id="addon-wrapping"> <i
+                                        class="fa-regular fa-user  "></i></span>
+                            </label>
+                            <input id="fname" name="fname" type="text" class="form-control border-start-0"
+                                placeholder="Name" aria-label="fname" aria-describedby="addon-wrapping">
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="input-group my-2 flex-nowrap col-md-6">
+                            <label for="userName" name="userName" class="d-flex">
+                                <span class="input-group-text " id="addon-wrapping"> <i
+                                        class="fa-regular fa-user  "></i></span>
+                            </label>
+                            <input id="userName" type="text" class="form-control border-start-0 " placeholder="Username"
+                                aria-label="Username" aria-describedby="addon-wrapping">
+
+                        </div>
+
+                        <div class="input-group flex-nowrap col-md-6 mt-3">
+                            <label for="password" name="password" class="d-flex">
+                                <span class="input-group-text" id="addon-wrapping"> <i
+                                        class="fa-regular fa-user  "></i></span>
+                            </label>
+                            <input id="password" type="password" class="form-control border-start-0"
+                                placeholder="password" aria-label="password" aria-describedby="addon-wrapping">
+                        </div>
+
+
+                        <div class="d-grid gap-2 py-3 col-6 mx-auto">
+                            <button class="btn btn-dark p-2 rounded-5 " id="Sign-Up" type="button">Sign Up</button>
+
+                        </div>
+                        <div class="w-75  m-auto">
+                            <span>
+                                Don’t have an account?
+                                <a href="" class="fw-bold text-decoration-none text-black" id="Sign-in">Sign in</a> <a
+                                    href="#" class="fw-bold text-decoration-none text-black d-none" id="singUp">sing
+                                    up</a></span>
+                        </div>
+                        <div class=" w-75 m-auto">
+                            <span><a href="#" class="fw-bold text-decoration-none text-black">login</a> with
+                                Other</span>
+                        </div>
+
+                        <div class="d-grid gap-2 col-6 mx-auto py-3 ">
+
+
+
+
+                            <div class="  border-2 border border-black rounded-5 
+                            pointer p-2 form-control  ">
+                                <span>
+                                    <img src="images/google.png" alt="" width="20px">
+
+                                    Login With<a href="http://accounts.google.com/" target="_blank"
+                                        class="fw-bold text-decoration-none text-black mx-1">Google</a></span>
+                            </div>
+                            <div class="border-2 border border-black rounded-5 
+                            pointer p-2 form-control ">
+                                <span>
+                                    <img src="images/facebook.png" alt="" width="20px">
+
+                                    Login With<a href="https://www.facebook.com/" target="_blank"
+                                        class="fw-bold text-decoration-none text-black mx-1 ">Facebook</a></span>
+                            </div>
+                            <figure class="shap">
+                                <div class="shapMove">
+                                    <a href="#PLAYMODE"><img src="images/created-by-ai-8635844_1280.png" alt=" "
+                                            width="200px"></a>
+                                </div>
+                            </figure>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-md-6 ">
+                    <div id="showData" class="text-center   mt-5 fw-bolder fs-1 fst-italic rounded-5"></div>
+                    <div class="p-4">
+                        <div id="wait" class="d-none">
+                            <img src="images/background.png" alt="" class="w-100 ">
+                        </div>
+
+
+                        <div id="win" class="d-none">
+                            <img src="images/win.png" alt="" class="w-100">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Element to contain animated typing -->
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Click To play Sound'],
+            typeSpeed: 50,
+            backSpeed: 40,
+            loop: true
+        });
+    </script>
+</body>
+
+
+
+
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

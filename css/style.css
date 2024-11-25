@@ -1,0 +1,104 @@
+body {
+    padding: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: mainText;
+    src: url(../fonts/IndieFlower-Regular.ttf);
+}
+
+h1,
+h2,
+p,
+#element {
+    font-family: var(mainText);
+    font-weight: 900;
+}
+
+* input {
+    border-radius: auto 0px !important;
+
+}
+
+.pointer,
+#soung {
+    cursor: pointer;
+}
+
+.one {
+    background-image: url(../images/vector-3175026_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.welcome {
+    background-clip: text;
+    background-image: linear-gradient(to right, #009FFF, #ec2F4B);
+    color: transparent;
+}
+
+#showData {
+
+
+    background-clip: text;
+    text-shadow: 5px 7px 5px black;
+    color: rgba(57, 224, 45, 0.684);
+
+
+
+
+
+}
+
+.shap {
+
+    position: relative;
+
+    img {
+        filter: drop-shadow(0px 15px 10px);
+
+    }
+
+    .shapMove {
+        position: relative;
+        animation: boundel 3s infinite alternate-reverse;
+    }
+
+
+}
+
+@keyframes boundel {
+
+    from {
+        top: 0;
+
+    }
+
+    25% {
+        top: 50px;
+
+    }
+
+    50% {
+        top: 30px;
+
+    }
+
+    75% {
+        top: 35px;
+
+    }
+
+    to {
+        top: 50px;
+
+
+    }
+}
