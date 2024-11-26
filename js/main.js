@@ -144,5 +144,5 @@ document.querySelector("#singUp").addEventListener("click", function (event) {
   document.querySelector(".hiddenmy").classList.add("d-none");
   document.querySelector("#singUp").classList.add("d-none");
   document.querySelector("#Sign-in").classList.remove("d-none");
-  mainButton.textContent = "LOGIN";
+  mainButton.textContent = "SIGN IN";
 });

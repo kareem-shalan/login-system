@@ -7,6 +7,11 @@ body {
     box-sizing: border-box;
 }
 
+
+header{
+    filter: drop-shadow(10px 30px 80px );
+}
+
 @font-face {
     font-family: mainText;
     src: url(../fonts/IndieFlower-Regular.ttf);
